@@ -1,7 +1,7 @@
 // Variable to track question number
-let questionNumber = 0;
+let questionNumber = 1;
 let answers = [];
-let score = 0;
+let score = 80;
 
 const questions = [
   "What's the best thing about me?",
