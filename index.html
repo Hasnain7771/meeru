@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeru's Best Friend Survey</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="chat-card">
+      <h1>Hey Meeru!</h1>
+      <p id="greeting">Welcome to your Best Friend Survey!</p>
+      
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+
+      <div id="question-container">
+        <p class="question" id="question-text">What's the best thing about me?</p>
+        <input type="text" id="answer" placeholder="Type your answer here..." />
+        <button onclick="nextQuestion()">
+          <i class="fas fa-arrow-right"></i> Submit Answer
+        </button>
+      </div>
+
+      <div id="result-container" class="result-container">
+        <p id="result-text"></p>
+        <button onclick="restart()">
+          <i class="fas fa-redo"></i> Try Again
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Friendship Survey. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
